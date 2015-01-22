@@ -5,11 +5,9 @@
 module FsServer
 using FsBert
 #------------------------------------------------------------------------------
-# TODO: External modules should be searched for, not provided to the server in
-# this manner, however this is an example of how you might have your server
-# call an external module at the moment.
+# FIXME: There is probably a better way of dynamically including modules.
 #------------------------------------------------------------------------------
-# using FsExtern
+using FsFootball
 #------------------------------------------------------------------------------
 include("types.jl")
 include("socket_io.jl")
